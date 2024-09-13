@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="fonts/">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>loop.local-Vankov P-23</title>
+</head>
+<body>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+    <header class="header">
+        <section class="section header-menu">
+            <div class="section__wrapper container menu_wrapper">
+                <div class="menu">
+                    <ul class="mainmenu__list">
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для мужчин <img src="img/Polygon.svg"></a></li>
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для женщин <img src="img/Polygon.svg"></a></li>
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для детей <img src="img/Polygon.svg"></a></li>
+                    </ul>
+                </div>
+                <div class="logo">
+                    <a class="logo header__logo">
+                        <img src="img/logo.svg" alt="Логотип">
+                    </a>
+                </div>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars" id="toggle_btn"></i>
+                </div>
+                <div class="dropdown_menu">
+                    <li><a href="#">Для мужчин <img src="img/Polygon.svg"></a></li>
+                    <li><a href="#">Для женщин <img src="img/Polygon.svg"></a></li>
+                    <li><a class="menu__link" href="#">Оплата</a></li>
+                    <li><a class="menu__link" href="#">Доставка</a></li>
+                </div>
+                <div class="menu">
+                    <ul class="mainmenu__list">
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Оплата</a></li>
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Доставка</a></li>
+                    </ul>
+                </div>
+                <div class="basket">
+                    <ul class="basket__list">
+                        <li class="basket__item">
+                            <a class="basket__link" href="#">
+                                <img src="img/shopping-basket-button.svg" alt="Корзина">
+                            </a>
+                        </li>
+                        <li class="basket__item">
+                            <a class="basket__link" href="#">
+                                <img src="img/Group 6.svg" alt="Количество товаров" >
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                const togglebtn = document.querySelector('.toggle_btn')
+                const togglebtnIcon = document.querySelector('.toggle_btn i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+        
+                togglebtn.onclick = function () {
+                    dropDownMenu.classList.toggle('open')
+                    const isOpen = dropDownMenu.classList.contains('open')
+                    togglebtnIcon.classList = isOpen
+                    ? 'fa-solid fa-xmark'
+                    : 'fa-solid fa-bars'
+                }
+            </script>
+        </section>
+        <section class="section banner">
+        <div class="container">
+            <div class="slider__wrapper">
+                <div class="slider__list">
+                    <div class="slider__item">
+                        <div class="slider__item-text">
+                            <p class="slider__text">Зимняя распродажа</p>
+                            <p class="slider__big-text">Скидка до 90%</p>
+                            <a href="#" class="button">Смотреть модели</a>
+                        </div>
+                        <div class="slider__item-price">
+                            <p class="slider__price--old">9900&#8381</p>
+                            <p class="slider__price--new">1900&#8381</p>
+                        </div>
+                    </div>
+                
+                    <button type="button" class="slider__button slider__button--prev bt">
+                        <img src="img/Group 2.7.png" alt="">
+                    </button>
+                    <button type="button" class="slider__button slider__button--next bt">
+                        <img src="img/Group 2.7 (1).png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center;" class="bu"><img src="img/first-screen__slider-controls.png" alt=""></p>
+        </section>
+    </header>
+    <main>
+        <section class="section delivery">
+            <div class="container delivery_container">
+                <p class="delivery__big-text">Бесплатная доставка <span class="Ot">от 3000₽</span></p>
+                <p class="delivery__text" id="tb">Сделайте заказ и получите подарок</p>
+            </div>
+        </section>
+        <section class="section men-women">
+            <div class="flex-container">
+                <div class="flex-elem">
+                    <h1 class="zag">Мужская <span class="Ot">коллекция</span></h1>
+                    <p class="te">Обувь, половеры, костюмы</p>
+                    <button class="btnpr"><img src="img/Arrow.svg" alt=""></button>
+                    <img src="img/Rectangle 3.png" class="imgs" alt="мужчина">
+                </div>
+                <div class="flex-elems">
+                    <h1 class="zagi">Женская <span class="Ot">коллекция</span></h1>
+                    <p class="tex">Обувь, половеры, костюмы</p>
+                    <button class="btnpr1"><img src="img/Arrow.svg" alt=""></button>
+                    <img src="img/Rectangle 3.1.png" class="imgsi" alt="женщина">
+                </div>
+            </div>
+        </section>
+        <section class="section dress">
+            <div class="container section__wrapper dress__wrapper">
+                <div class="dress__item dress__item--grey"><p class="dress__item--text">Платья</p><img src="img/tshirt.png" alt=""></div>
+                <div class="dress__item dress__item--cream"><p class="dress__item--text">Платья</p><img src="img/tshirt.png" alt=""></div>
+                <div class="dress__item dress__item--grey"><p class="dress__item--text">Платья</p><img src="img/tshirt.png" alt=""></div>
+                <div class="dress__item dress__item--cream"><p class="dress__item--text">Платья</p><img src="img/tshirt.png" alt=""></div>
+                <div class="dress__item dress__item--cream"><p class="dress__item--text">Платья</p><img src="img/tshirt.png" alt=""></div>
+                <div class="dress__item dress__item--grey"><p class="dress__item--text">Платья</p><img src="img/tshirt.png" alt=""></div>
+                <div class="dress__item dress__item--cream"><p class="dress__item--text">Платья</p><img src="img/tshirt.png" alt=""></div>
+                <div class="dress__item dress__item--grey"><p class="dress__item--text">Платья</p><img src="img/tshirt.png" alt=""></div>
+            </div>
+        </section>
+        <section class="section new">
+            <h1 class="modeli">Новые модели</h1>
+            <div class="container_model">
+                <div class="flex-element">
+                    <div class="verh"><img src="border/Line.png" class="verh2" alt=""><img src="border/Line-1.png" class="verh5" alt=""></div>
+                    <div class="verh1"><img src="border/Line.png" class="verh3" alt=""><img src="border/Line-1.png" class="verh4" alt=""></div>
+                    <img src="img/Rectangle 2.svg" alt="">
+                    <p class="modtx">Коктейльное платье</p>
+                    <h3 class="modh">&#8381; 40 000</h3>
+                    <div class="niz2"><img src="border/Line.png" alt=""><img src="border/Line-1.png" alt=""></div>
+                    <div class="niz1"><img src="border/Line-1.png" alt=""><img src="border/Line.png" alt=""></div>
+                </div>
+                <div class="flex-element">
+                    <div class="verh"><img src="border/Line.png" class="verh2" alt=""><img src="border/Line-1.png" class="verh5" alt=""></div>
+                    <div class="verh1"><img src="border/Line.png" class="verh3" alt=""><img src="border/Line-1.png" class="verh4" alt=""></div>
+                    <img src="img/Rectangle 2.svg" alt="">
+                    <p class="modtx">Коктейльное платье</p>
+                    <h3 class="modh">&#8381; 40 000</h3>
+                    <div class="niz2"><img src="border/Line.png" alt=""><img src="border/Line-1.png" alt=""></div>
+                    <div class="niz1"><img src="border/Line-1.png" alt=""><img src="border/Line.png" alt=""></div>
+                </div>
+                <div class="flex-element">
+                    <div class="verh"><img src="border/Line.png" class="verh2" alt=""><img src="border/Line-1.png" class="verh5" alt=""></div>
+                    <div class="verh1"><img src="border/Line.png" class="verh3" alt=""><img src="border/Line-1.png" class="verh4" alt=""></div>
+                    <img src="img/Rectangle 2.svg" alt="">
+                    <p class="modtx">Коктейльное платье</p>
+                    <h3 class="modh">&#8381; 40 000</h3>
+                    <div class="niz2"><img src="border/Line.png" alt=""><img src="border/Line-1.png" alt=""></div>
+                    <div class="niz1"><img src="border/Line-1.png" alt=""><img src="border/Line.png" alt=""></div>
+                </div>
+                <div class="flex-element">
+                    <div class="verh"><img src="border/Line.png" class="verh2" alt=""><img src="border/Line-1.png" class="verh5" alt=""></div>
+                    <div class="verh1"><img src="border/Line.png" class="verh3" alt=""><img src="border/Line-1.png" class="verh4" alt=""></div>
+                    <img src="img/Rectangle 2.svg" alt="">
+                    <p class="modtx">Коктейльное платье</p>
+                    <h3 class="modh">&#8381; 40 000</h3>
+                    <div class="niz2"><img src="border/Line.png" alt=""><img src="border/Line-1.png" alt=""></div>
+                    <div class="niz1"><img src="border/Line-1.png" alt=""><img src="border/Line.png" alt=""></div>
+                </div>
+                <button class="ab">Все модели <img src="img/Arrow.svg" alt=""></button>
+            </div>
+        </section>
+        <section class="Strich">
+            <div class="container_podpis">
+                <div class="flex-elementiks">
+                    <h1>ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ</h1>
+                </div>
+                <div class="flex-elementik">
+                    <input type="email" name="email" class="abcd" placeholder="Ваш e-mail">
+                </div>
+                <div class="flex-elementik">
+                    <button class="abc">Подписаться</button>
+                </div>
+            </div>
+        </section>
+        <section class="Rabatte">
+            <div class="container">
+                <h1 class="modeli">Скидки до 90%</h1>
+            <div class="container_model">
+                <div class="flex-element">
+                    <div class="verh"><img src="border/Line.png" class="verh2" alt=""><img src="border/Line-1.png" class="verh5" alt=""></div>
+                    <div class="verh1"><img src="border/Line.png" class="verh3" alt=""><img src="border/Line-1.png" class="verh4" alt=""></div>
+                    <img src="img/Rectangle 2.svg" alt="">
+                    <p class="modtx">Коктейльное платье</p>
+                    <h3 class="modh">&#8381; 40 000</h3>
+                    <div class="niz2"><img src="border/Line.png" alt=""><img src="border/Line-1.png" alt=""></div>
+                    <div class="niz1"><img src="border/Line-1.png" alt=""><img src="border/Line.png" alt=""></div>
+                </div>
+                <div class="flex-element">
+                    <div class="verh"><img src="border/Line.png" class="verh2" alt=""><img src="border/Line-1.png" class="verh5" alt=""></div>
+                    <div class="verh1"><img src="border/Line.png" class="verh3" alt=""><img src="border/Line-1.png" class="verh4" alt=""></div>
+                    <img src="img/Rectangle 2.svg" alt="">
+                    <p class="modtx">Коктейльное платье</p>
+                    <h3 class="modh">&#8381; 40 000</h3>
+                    <div class="niz2"><img src="border/Line.png" alt=""><img src="border/Line-1.png" alt=""></div>
+                    <div class="niz1"><img src="border/Line-1.png" alt=""><img src="border/Line.png" alt=""></div>
+                </div>
+                <div class="flex-element">
+                    <div class="verh"><img src="border/Line.png" class="verh2" alt=""><img src="border/Line-1.png" class="verh5" alt=""></div>
+                    <div class="verh1"><img src="border/Line.png" class="verh3" alt=""><img src="border/Line-1.png" class="verh4" alt=""></div>
+                    <img src="img/Rectangle 2.svg" alt="">
+                    <p class="modtx">Коктейльное платье</p>
+                    <h3 class="modh">&#8381; 40 000</h3>
+                    <div class="niz2"><img src="border/Line.png" alt=""><img src="border/Line-1.png" alt=""></div>
+                    <div class="niz1"><img src="border/Line-1.png" alt=""><img src="border/Line.png" alt=""></div>
+                </div>
+                <div class="flex-element">
+                    <div class="verh"><img src="border/Line.png" class="verh2" alt=""><img src="border/Line-1.png" class="verh5" alt=""></div>
+                    <div class="verh1"><img src="border/Line.png" class="verh3" alt=""><img src="border/Line-1.png" class="verh4" alt=""></div>
+                    <img src="img/Rectangle 2.svg" alt="">
+                    <p class="modtx">Коктейльное платье</p>
+                    <h3 class="modh">&#8381; 40 000</h3>
+                    <div class="niz2"><img src="border/Line.png" alt=""><img src="border/Line-1.png" alt=""></div>
+                    <div class="niz1"><img src="border/Line-1.png" alt=""><img src="border/Line.png" alt=""></div>
+                </div>
+                <button class="ab">Все модели <img src="img/Arrow.svg" alt=""></button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="Links">
+            <div class="container">
+            <div class="container_modelk">
+                <div class="flex-elek">
+                    <img src="img/logo (2).svg" alt="Логотип">
+                    <p class="t">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus egestas elit, at eleifend elit ornare ut.</p>
+                </div>
+            </div>
+            <div class="ctn">
+                <div class="flex-ele">
+                    <h3 class="zagol">Основные ссылки</h3>
+                    <p class="t">О компании</p>
+                    <p class="t">Каталог</p>
+                    <p class="t">Доставка</p>
+                    <p class="t">Оплата</p>
+                </div>
+                <div class="flex-ele">
+                    <h3 class="zagol">Категории</h3>
+                    <p class="t">Мужская одежда</p>
+                    <p class="t">Женская одежда</p>
+                    <p class="t">Детская одежда</p>
+                    <p class="t">Для животных</p>
+                </div>
+                <div class="flex-ele">
+                    <h3 class="zagol">Полезные ссылки</h3>
+                    <p class="t">Таблица размеров</p>
+                    <p class="t">Блог о моде</p>
+                    <p class="t">Наша миссия</p>
+                </div>
+                <div class="flex-ele">
+                    <h3 class="zagol">Соц сети</h3>
+                    <div class="icon-text">   
+                        <a href="#" class="icon-link"><img class="ft-img" src="img/vk.svg" alt=""></a>
+                        <a href="#" class="icon-link">VK.com</a>
+                    </div>
+                    <div class="icon-text">
+                        <a href="#" class="icon-link"><img class="ft-img" src="img/facebook.svg" alt=""></a>
+                        <a href="#" class="icon-link">Facebook</a>
+                    </div>
+                    <div class="icon-text">
+                        <a href="#" class="icon-link"><img class="ft-img" src="img/instagram.svg" alt=""></a>
+                        <a href="#" class="icon-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="Ende">
+            <div class="container">
+                <p class="fo">Copyright © 2019. Все права защищены</p>
+                <p class="fot">Политика приватности</p>
+            </div>
+        </section>
+    </footer>
+    <script type="text/javascript">
+        const btn = document.getElementById("navbar-toggler");
+        const menus = document.querySelectorAll(".menu");
+        btn.addEventListener('click',() => {
+            for (let el of menus) {
+                el.classList.toggle("show");
+            }
+        })
+    </script>
+</body>
+</html>
